@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "https://github.com/geraldvillorente/vultus/cmd"
+import "github.com/geraldvillorente/vultus/cmd"
 
 func main() {
 	cmd.Execute()
