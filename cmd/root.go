@@ -84,6 +84,11 @@ func initConfig() {
 
 	viper.AutomaticEnv() // read in environment variables that match
 
+	// Set API base URL.
+	if viper.GetString("baseURL") == "" {
+		viper.Set("baseURL", "https://api.github.com/users/")
+	}
+
 	// If a config file is found, read it in.
 	if err := viper.ReadInConfig(); err == nil {
 		fmt.Println("Using config file:", viper.ConfigFileUsed())

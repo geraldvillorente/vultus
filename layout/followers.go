@@ -13,10 +13,10 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-package following
+package layout
 
-// Following structure.
-type Following []struct {
+// Followers structure.
+type Followers []struct {
 	Login             string `json:"login"`
 	ID                int    `json:"id"`
 	NodeID            string `json:"node_id"`
